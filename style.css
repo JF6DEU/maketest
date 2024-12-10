@@ -1,1 +1,13 @@
-
+html,head,body{
+    margin:0;
+    padding:0;
+    overscroll-behavior: none;
+    /* Just in case */
+    overscroll-behavior-x: none;
+    /* Just in case */
+    overscroll-behavior-y: none;
+    /* for safari */
+    touch-action: none;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
