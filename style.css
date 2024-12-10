@@ -7,7 +7,5 @@ html,head,body{
     /* Just in case */
     overscroll-behavior-y: none;
     /* for safari */
-    touch-action: none;
-    text-size-adjust: none;
-    -webkit-text-size-adjust: none;
+    touch-action: manipulation;
 }
