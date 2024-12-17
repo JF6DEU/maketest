@@ -12,4 +12,58 @@ html,head,body{
     -webkit-text-size-adjust: none;
     width:100vw;
     height:100vh;
+    font-size:25px;
+    color:#fff;
+    background-color:#000;
+    font-family:system-ui, sans-serif;
+}
+.sousa{
+    /* まずは最上階に固定、もちろん動けるように */
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    width:100vw;
+    height:100vh;
+}
+.sousa .click_view{
+    display:flex;
+    position:absolute;
+    bottom:1.5rem;
+    /* ここから中央寄せのおまじない */
+    right:0;
+    left:0;
+    margin:0 auto;
+    /* ここまで */
+    /* 幅80% */
+    width:80%;
+    /* フォントの大きさは100%で */
+    font-size:0.8rem;
+    border:3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    height: 5rem;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+}
+.sousa .click_view .click_inner{
+    width:calc(100% - 40px);
+    height:calc(100% - 40px);
+}
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.sousa .click_sita{
+    position:absolute;
+    bottom:1.5rem;
+    right:20%;
+    opacity: 0;
+    animation: 1s linear 0.5s infinite reverse fade;
 }
