@@ -2,7 +2,7 @@ eventCatchStatus = {
     debug: true
 };
 class eventCatch{
-    constructor(element = document.createElement("span")){
+    constructor(element){
         this.elem = element;
     }
     // イベント追加を簡潔に(nodeに似てる)
